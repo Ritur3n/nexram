@@ -95,12 +95,12 @@ function Index() {
               </a>
             ))}
           </nav>
-          <a
-            href="#cta"
+          <Link
+            to="/demo"
             className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-all hover:-translate-y-0.5 hover:brightness-110"
           >
             Solicitar demo
-          </a>
+          </Link>
         </div>
       </header>
 
