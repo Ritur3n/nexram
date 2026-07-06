@@ -68,12 +68,12 @@ function PrimaryButton({
 
 function SecondaryButton({ children }: { children: React.ReactNode }) {
   return (
-    <a
-      href="#cta"
+    <Link
+      to="/demo"
       className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card/70 px-6 py-3 text-sm font-semibold text-foreground backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/40"
     >
       {children}
-    </a>
+    </Link>
   );
 }
 
