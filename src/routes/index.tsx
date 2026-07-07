@@ -46,7 +46,7 @@ function Logo({ className = "" }: { className?: string }) {
         <Lock className="h-4 w-4" />
       </div>
       <span className="font-display text-lg font-extrabold tracking-tight text-foreground">
-        Nevra
+        Nex Ram
       </span>
     </div>
   );
@@ -153,7 +153,7 @@ function Index() {
             <div className="absolute inset-0 -z-10 mx-auto h-[80%] w-[80%] rounded-full bg-primary/20 blur-3xl" />
             <img
               src={heroServer}
-              alt="Render premium del servidor de IA privada Nevra con iluminación azul"
+              alt="Render premium del servidor de IA privada Nex Ram con iluminación azul"
               width={1280}
               height={1280}
               className="float-slow mx-auto w-full max-w-md drop-shadow-2xl"
@@ -230,7 +230,7 @@ function Index() {
                 icon: Server,
                 step: "01",
                 title: "Instala el servidor",
-                text: "Recibes y conectas el servidor Nevra en tus propias instalaciones. Listo para funcionar desde el primer día.",
+                text: "Recibes y conectas el servidor Nex Ram en tus propias instalaciones. Listo para funcionar desde el primer día.",
               },
               {
                 icon: Database,
@@ -328,7 +328,7 @@ function Index() {
         <div className="mx-auto max-w-5xl px-6">
           <Reveal className="mx-auto max-w-2xl text-center">
             <h2 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
-              IA en la nube vs. servidor Nevra
+              IA en la nube vs. servidor Nex Ram
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
               La diferencia entre depender de terceros y tener el control
@@ -364,7 +364,7 @@ function Index() {
               className="rounded-3xl border-2 border-primary/30 bg-card p-8 shadow-glow"
             >
               <h3 className="flex items-center gap-2 text-lg font-bold text-primary">
-                <Lock className="h-5 w-5" /> Servidor Nevra
+                <Lock className="h-5 w-5" /> Servidor Nex Ram
               </h3>
               <ul className="mt-6 space-y-4">
                 {[
@@ -627,7 +627,7 @@ function Index() {
         <div className="border-t border-border">
           <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-6 sm:flex-row">
             <p className="text-xs text-muted-foreground">
-              © {new Date().getFullYear()} Nevra. Todos los derechos reservados.
+              © {new Date().getFullYear()} Nex Ram. Todos los derechos reservados.
             </p>
             <a
               href="#"
