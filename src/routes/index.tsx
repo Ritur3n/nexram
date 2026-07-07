@@ -34,6 +34,7 @@ export const Route = createFileRoute("/")({
 const nav = [
   { label: "Producto", href: "#producto" },
   { label: "Cómo funciona", href: "#como-funciona" },
+  { label: "Precios", href: "#precios" },
   { label: "Casos de uso", href: "#casos" },
   { label: "Comparativa", href: "#comparativa" },
 ];
