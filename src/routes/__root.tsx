@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Nevra — Servidor de IA privada para tu empresa" },
+      { title: "Nex Ram — Servidor de IA privada para tu empresa" },
       {
         name: "description",
         content:
           "Ejecuta inteligencia artificial 100% privada desde tus propias instalaciones. Sin nube, sin suscripciones obligatorias. Privacidad, control y rendimiento.",
       },
-      { name: "author", content: "Nevra" },
-      { property: "og:title", content: "Nevra — Servidor de IA privada" },
+      { name: "author", content: "Nex Ram" },
+      { property: "og:title", content: "Nex Ram — Servidor de IA privada" },
       {
         property: "og:description",
         content: "Tu IA. Tus datos. Tu control. IA privada que se ejecuta localmente, sin enviar datos a la nube.",
