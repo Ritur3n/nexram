@@ -572,6 +572,79 @@ function Index() {
               </Reveal>
             ))}
           </div>
+
+          {/* Maintenance & support plans */}
+          <Reveal className="mx-auto mt-16 max-w-3xl text-center">
+            <h3 className="text-2xl font-extrabold tracking-tight text-foreground sm:text-3xl">
+              Mantenimiento y soporte
+            </h3>
+            <p className="mt-3 text-base text-muted-foreground">
+              Mantén tu servidor protegido, actualizado y con respaldo profesional.
+            </p>
+          </Reveal>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {[
+              {
+                name: "Básica",
+                price: "150€",
+                period: "/mes",
+                features: [
+                  "Backup automático (retención 7 días)",
+                  "Monitorización básica de uptime",
+                  "Actualizaciones de seguridad",
+                  "Soporte por email sin SLA",
+                ],
+              },
+              {
+                name: "Estándar",
+                price: "200€",
+                period: "/mes",
+                features: [
+                  "Backup inmutable (30 días)",
+                  "Alertas proactivas (CPU/disco/caídas)",
+                  "Soporte con SLA de respuesta",
+                  "Horas de soporte incluidas",
+                ],
+              },
+              {
+                name: "Premium",
+                price: "250€",
+                period: "/mes",
+                features: [
+                  "Todo lo del plan Estándar",
+                  "SLA de restauración <24h",
+                  "Informe mensual automático",
+                  "Soporte prioritario y revisión trimestral",
+                ],
+              },
+            ].map((plan, i) => (
+              <Reveal
+                key={plan.name}
+                delay={i * 80}
+                as="article"
+                className="flex flex-col rounded-3xl border border-border bg-card p-6 shadow-soft"
+              >
+                <h4 className="text-lg font-bold text-foreground">{plan.name}</h4>
+                <div className="mt-2 flex items-baseline gap-1">
+                  <span className="font-display text-3xl font-extrabold tracking-tight text-foreground">
+                    {plan.price}
+                  </span>
+                  <span className="text-sm text-muted-foreground">{plan.period}</span>
+                </div>
+                <ul className="mt-5 space-y-3">
+                  {plan.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2.5 text-sm text-muted-foreground">
+                      <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-primary/10 text-primary">
+                        <Check className="h-3 w-3" />
+                      </span>
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
