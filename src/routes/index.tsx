@@ -83,10 +83,10 @@ function SecondaryButton({ children }: { children: React.ReactNode }) {
 
 function Index() {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-background">
+    <div className="min-h-screen overflow-x-hidden bg-background pt-20">
       {/* NAV */}
-      <header className="sticky top-0 z-50">
-        <div className="mx-auto mt-4 flex max-w-6xl items-center justify-between gap-4 rounded-full glass px-5 py-3 shadow-soft sm:px-6">
+      <header className="fixed top-0 left-0 right-0 z-50 px-4 pt-3 sm:px-6">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 rounded-full glass px-5 py-3 shadow-soft">
           <Logo />
           <nav className="hidden items-center gap-8 md:flex">
             {nav.map((n) => (
